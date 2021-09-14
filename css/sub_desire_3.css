@@ -1,0 +1,30 @@
+
+
+
+::selection {
+  background: rgba(249, 64, 243, 0.4);
+}
+ 
+.popup {
+  border: 1px solid rgba(249, 64, 243, .3);
+  border-radius: 15px;
+}
+
+.popup:hover {
+  box-shadow:
+  inset 20px 0 50px rgba(255, 0, 255, 0.5),   /* inner left magenta short */
+  inset -20px 0 50px rgba(255, 0, 255, 0.5),  /* inner right cyan short */
+  0 0 50px rgba(255, 0, 255, 0.5);       /* outer left magenta */
+}
+
+.popup_header_3 {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: 400;
+  color: #fff;
+  background: linear-gradient(80deg, #f940f3, #000, #000, #f940f3);
+  border-radius: 10px 10px 0px 0px;
+  cursor: move;
+}
+
