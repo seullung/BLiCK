@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>eye(memory)=desire</title>
+        <meta itemprop="name" content="eye(memory)=desire">
+        <meta itemprop="description" content="The exploration of desire for consumption">
+        <meta itemprop="image" content=""> 
+        <!-- 링크 공유시 들어갈 이미지 삽입 필요 (1200*630, png) -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://eyememorydesire.com">
+        <meta property="og:title" content="eye(memory)=desire">
+        <meta property="og:site_name" content="eye(memory)=desire">
+        <meta property="og:description" content="The exploration of desire for consumption">
+        <meta property="og:image" content="">
+        <!-- 링크 공유시 들어갈 이미지 삽입 필요 (1200*630, png) -->
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="eye(memory)=desire">
+        <meta name="twitter:description" content="The exploration of desire for consumption">
+        <meta property="twitter:url" content="https://eyememorydesire.com">
+        <meta name="twitter:image" content="">
+        <!-- 링크 공유시 들어갈 이미지 삽입 필요 (1200*630, png) -->
+        <link rel="shorcut icon" href="images/favicon.ico">
+        <link rel="icon" href="images/favicon.png">
+        <link rel="stylesheet" href="css/sub_style.css">
+        <link rel="stylesheet" href="css/sub_desire_3.css">
+        <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://use.typekit.net/iav2lqb.css">
+
+        <script>
+            var textarray = [
+                "jacket", "bags", "cosmetics", "perfume", "nail art", "shoes", "phone case", "airpods", "LP",
+                "game items", "goods", "junk food", "facial massage", "skin care", "props"
+            ];
+            function RndText() {
+            var rannum= Math.floor(Math.random()*textarray.length);
+            document.getElementById('ShowText').innerHTML=textarray[rannum];
+            }
+            onload = function() { RndText(); }
+
+            var inter = setInterval(function() { RndText(); }, 400);
+        </script>
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script>
+            $(function() {
+            $( ".draggable" ).draggable();
+            });
+        </script>
+
+
+    </head>
+    
+    <body>
+        <main>
+
+            <!-- background -->
+            <div class="own_bg"></div>
+    
+            <!-- title & text & lens -->
+            <a href="index.html">
+                <div class="title" style="background:url(/images/blick_logo.png) no-repeat center; width:149px; height:90px; cursor:pointer;"></div>
+                <div class="title-transition"></div>
+            </a>
+           
+            <div class="desire_text" style="line-height:120%;">
+                <li style="color: #f940f3;">eye (<span style="color: #f940f3;" id="ShowText"></span>) = desire</li>
+            </div>
+
+            <div class="back_lenses">
+                <img src="images/back_lenses3.png">
+            </div>
+            <model-viewer class="lenses" camera-controls auto-rotate alt="lens_1" src="images/lens_3.glb"
+            style="cursor: url(images/cursor_d3.cur), auto;"></model-viewer>
+
+            <!-- own_objects -->
+            <div class="screen">
+                <div class="items" id="iN" data-tilt></div>
+ 
+            </div>
+
+            <!-- click_popup_layers -->
+            <div class="draggable popup" id="popupN">
+                <div class="popup_inner">
+                    <div class="popup_header_3">
+                        <span>Interviewee nn</span>
+                    </div>
+                    <div class="popup_text">
+                        <span>어저구저저구
+    
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+
+        <script src="js/howler.core.js"></script>
+        <script src="js/tilt.jquery.js"></script>
+        <script src="js/script.js"></script>
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.items #i1 #i2').tilt({
+                    glare: true,
+                    maxGlare: .5,
+                    scale: .8,
+                    maxTilt: 5,
+                    perspective: 1000,
+                })
+            })
+        </script>
+
+</html>
